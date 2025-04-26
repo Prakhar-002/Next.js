@@ -86,30 +86,6 @@ export default Alex;
 
 </br>
 
-<h3 align="center" > 🐇 UsersList/Prakhar Page  🦚</h3>
-
-```dash
-http://localhost:3000/userslist/Prakhar
-```
-
-```TSX
-//============ 🗂️userslist/🗂️Prakhar/⚛️page.tsx ============== 
-
-const Prakhar = () => {
-  return (
-    <div>
-      <h1>Info About Prakhar</h1>
-      <p>Hello I&apos;m Prakhar</p>
-    </div>
-  );
-};
-
-export default Alex;
-
-```
-
-</br>
-
 <h3 align="center" > 🐇 UsersList/John Page  🦚</h3>
 
 ```dash
