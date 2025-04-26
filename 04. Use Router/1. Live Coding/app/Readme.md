@@ -59,7 +59,7 @@ export default Colors;
 <h3 align="center" > 🐇 About page  🦚</h3>
 
 ```dash
-http://localhost:3000/users/about
+http://localhost:3000/about
 ```
 
 ```TSX
