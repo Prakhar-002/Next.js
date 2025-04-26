@@ -9,6 +9,7 @@ http://localhost:3000/
 ```TSX
 //============ 🗂️App/⚛️page.tsx ============== 
 
+// 'use client' is necessary to use (useRouter)
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -16,6 +17,18 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   console.log("-----", router);
+
+  /*
+   This gives following function -> 
+
+    back:        [Function: back],
+    forward:     [Function: forward],
+    prefetch:    [Function (anonymous)],
+    replace:     [Function: replace],
+    push:        [Function: push],
+    refresh:     [Function: refresh],
+    hmrRefresh   [Function: hmrRefresh]
+  */
 
   const navigate = (page: string) => {
     router.push(`/${page}`);
