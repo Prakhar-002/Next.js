@@ -62,7 +62,7 @@ http://localhost:3000/blog/1
 ```
 
 ```TSX
-//============ 🗂️login/🗂️1/⚛️page.tsx ============== 
+//============ 🗂️blog/🗂️1/⚛️page.tsx ============== 
 
 import Link from "next/link";
 
@@ -105,7 +105,7 @@ http://localhost:3000/blog/2
 ```
 
 ```TSX
-//============ 🗂️login/🗂️2/⚛️page.tsx ============== 
+//============ 🗂️blog/🗂️2/⚛️page.tsx ============== 
 
 import Link from "next/link";
 
