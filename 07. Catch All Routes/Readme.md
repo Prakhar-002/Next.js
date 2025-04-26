@@ -2,7 +2,7 @@
 
 </br>
 
-<h3  align="center" > In Next.js, Dynamic Routing lets you create pages where parts of the URL are dynamic (change based on the content). </h3>
+<h3  align="center" > In Next.js, catch-all routes are used when you want a single page to handle multiple routes or URL segments. You can create a catch-all route by wrapping a folder or filename with [...param]. This allows the route to match any number of path segments. </h3>
 
 </br>
 
