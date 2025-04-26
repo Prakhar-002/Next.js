@@ -9,8 +9,16 @@ http://localhost:3000/
 ```TSX
 //============ 🗂️App/⚛️page.tsx ============== 
 
+import Navbar from './components/navbar';
+
 const Home = () => {
-  return <div>Next.js Complete Course 🐻‍❄️</div>;
+  return 
+  <>
+    <div>Next.js Complete Course 🐻‍❄️</div>;
+
+    {/* Render the Navbar component here  */}
+    <Navbar />
+  </>
 };
 
 export default Home;
@@ -71,6 +79,7 @@ http://localhost:3000/
 
 import Link from "next/link";
 
+// Must render this component in your app directory in page.tsx file 👆🏻
 const Navbar = () => {
   return (
     <nav>
