@@ -20,7 +20,7 @@ Next.js is a popular open-source `React framework` that makes it easier to build
 ⚠️ Problem ⚠️ with `REACT.JS`
 </h1>
 
-<img src="https://github.com/user-attachments/assets/d9930754-528b-4e62-8cb8-4c7c1826295a"/>
+<img src="https://github.com/user-attachments/assets/b6f2847c-7630-40b3-b589-fbb7edc0b85a"/>
 
 </br>
 
@@ -30,7 +30,7 @@ Next.js is a popular open-source `React framework` that makes it easier to build
 
 </h1>
 
-<img src="https://github.com/user-attachments/assets/50f5c738-a9dc-4b80-a30e-35d892f1e5af"/>
+<img src="https://github.com/user-attachments/assets/95f302d8-5896-4901-9849-046935ece799"/>
 
 </br>
 
@@ -40,7 +40,7 @@ Next.js is a popular open-source `React framework` that makes it easier to build
 
 </h1>
 
-![image](https://github.com/user-attachments/assets/616cf7a1-8d10-43fe-b9ec-168b835b63f6)
+![image](https://github.com/user-attachments/assets/2e53d067-8ae1-4596-8f47-05c484defe01)
 
 </h3>
 
