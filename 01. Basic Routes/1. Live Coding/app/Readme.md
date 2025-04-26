@@ -3,7 +3,6 @@
 <h3 align="center" > 🐇 Home Page  🦚</h3>
 
 ```dash
-
 http://localhost:3000/
 ```
 
@@ -23,7 +22,6 @@ export default Home;
 <h3 align="center" > 🐇 Login Page  🦚</h3>
 
 ```dash
-
 http://localhost:3000/login
 ```
 
@@ -43,7 +41,6 @@ export default Login;
 <h3 align="center" > 🐇 About page  🦚</h3>
 
 ```dash
-
 http://localhost:3000/about
 ```
 
