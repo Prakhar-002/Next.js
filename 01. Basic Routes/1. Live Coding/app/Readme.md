@@ -10,7 +10,7 @@ http://localhost:3000/
 //============ 🗂️App/⚛️page.tsx ============== 
 
 const Home = () => {
-  return <div>Next.js Complete Course 🤜</div>;
+  return <div>Next.js Complete Course 🐻‍❄️</div>;
 };
 
 export default Home;
