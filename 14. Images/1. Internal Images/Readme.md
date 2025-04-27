@@ -28,4 +28,10 @@ export default Home;
 
 <h3 align="center" > 🐇 Public Folder image  🦚</h3>
 
-<img src="./public/florian-van-duyn.jpg" />
+<h1 align="center" > 
+
+<img src="./public/florian-van-duyn.jpg" width="400"
+    height="400" alt="Nature Image"
+/>
+
+</h1>

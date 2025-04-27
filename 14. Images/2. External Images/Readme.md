@@ -38,3 +38,16 @@ export default Home;
 Add the domains in the next.config.ts file for external link to work with Image
 
 </h4>
+
+</br>
+
+<h1 align="center" > 
+
+<img
+    src="https://images.unsplash.com/photo-1475776408506-9a5371e7a068?q=80&w=3916&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    alt="Nature Image"
+    width="400"
+    height="400"
+/>
+
+</h1>
