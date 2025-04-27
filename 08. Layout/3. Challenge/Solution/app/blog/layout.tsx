@@ -40,5 +40,3 @@ const BlogLayout = ({
     </div>
   );
 };
-
-export default BlogLayout;
