@@ -1,5 +1,8 @@
 <h1  align="center" > 🏕️ 𝐋ⱺαᑯ𝗂𐓣𝗀 🏚️</h1>
 
+![1](https://github.com/user-attachments/assets/aa920d45-66c7-4587-8d28-788480c4d822)
+![2](https://github.com/user-attachments/assets/121f927e-69eb-45b9-b971-85389346fb66)
+
 <h3 align="center" > 🐇 Home Page  🦚</h3>
 
 ```dash
