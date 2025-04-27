@@ -6,14 +6,14 @@
 
 ## 📄 Difference between `layout.tsx` and `template.tsx`
 
-| Feature             | `layout.tsx`                                                                          | `template.tsx`                                                                 |
-|---------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| **Purpose**         | Defines the static layout (header, footer, sidebar) for all pages in a route.         | Defines a dynamic layout for each instance of a dynamic route.                  |
-| **Rendering**       | Rendered once and shared across all child pages.                                       | Rendered separately for each dynamic page instance.                             |
-| **Caching**         | Highly cacheable because it is static.                                                 | Less cacheable because it often depends on dynamic data.                        |
-| **Use Case**        | Persistent layout across multiple pages.                                               | Different layouts for different dynamic pages (e.g., blog posts, user profiles). |
-| **Example**         | Sidebar and footer appearing on all pages.                                             | Blog post pages having slightly different wrappers.                             |
-| **Location**        | `app/layout.tsx`                                                                       | `app/[slug]/template.tsx`                                                       |
+| 🔹 Feature             | 🏛️ `layout.tsx`                                                                          | 🧩 `template.tsx`                                                                 |
+|------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **🎯 Purpose**          | Defines the **static layout** (header, footer, sidebar) for all pages in a route.         | Defines a **dynamic layout** for each instance of a dynamic route.                |
+| **⚡ Rendering**        | Rendered **once** and **shared** across all child pages.                                  | Rendered **separately** for **each dynamic page instance**.                       |
+| **🗂️ Caching**          | **Highly cacheable** because it is static and doesn’t depend on dynamic data.             | **Less cacheable** because it often uses dynamic content.                         |
+| **🛠️ Use Case**         | Persistent structure like **navigation bars, sidebars, and footers** across pages.        | Different layouts for **dynamic pages** like **blog posts, user profiles**, etc.  |
+| **📝 Example**          | Sidebar and footer appearing on **every page**.                                            | Each blog post page having a **custom wrapper**.                                  |
+| **📂 Location**         | `/app/layout.tsx`                                                                          | `/app/[slug]/template.tsx`                                                        |
 
 </br>
 
