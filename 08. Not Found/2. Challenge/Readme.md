@@ -21,8 +21,6 @@ The goal of this exercise is to practice creating a custom "Not Found" (404) pag
 
 ![image](https://github.com/user-attachments/assets/3af95cd4-96e0-411f-90dd-25c245b4fa2c)
 
-</br>
-
 <h3 align="center" > 🐇 Not Found Page  🦚</h3>
 
 ```dash
