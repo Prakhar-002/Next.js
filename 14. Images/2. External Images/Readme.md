@@ -33,6 +33,23 @@ export default Home;
 
 <h3 align="center" > 🐇 next.config.ts File  🦚</h3>
 
+```TS
+
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+  images: {
+    domains: ["images.unsplash.com"],
+  },
+};
+
+export default nextConfig;
+
+```
+
+</br>
+
 <h4 align="center" > 
 
 Add the domains in the next.config.ts file for external link to work with Image
