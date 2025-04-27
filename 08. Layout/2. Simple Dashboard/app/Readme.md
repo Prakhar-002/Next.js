@@ -46,14 +46,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
   <html>
     <body className="font-sans bg-gray-100 text-gray-800">
       <div className="flex min-h-screen">
-        <aside className="w-64 bg-black text-white py-4 shadow-lg">
-          <h1 className="text-2xl font-bold ml-4 mb-6">Admin Panel</h1>
+        {/* <!-- Sidebar --> */}
+        <aside className="w-64 bg-gradient-to-b from-black to-gray-900 text-white py-6 px-4 shadow-xl">
+          <h1 className="text-3xl font-bold mb-6 text-[#D2691E]">Admin Panel</h1>
           <ul className="space-y-4">
             {sidebarLinks.map(({ href, label }) => (
               <li key={href}>
                 <Link
                   href={href}
-                  className="block py-2 px-4 rounded-md hover:bg-white hover:text-black transition duration-300"
+                  className="block py-3 px-6 rounded-md text-lg hover:bg-[#8B4513] border-l-2 border-[#8B4513] hover:text-white transition duration-300 ease-in-out transform hover:scale-105"
                 >
                   {label}
                 </Link>
@@ -62,7 +63,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
           </ul>
         </aside>
 
-        <main className="flex-1 p-8 bg-white shadow-inner rounded-lg">
+        {/* <!-- Main Content --> */}
+        <main className="flex-1 p-8 shadow-xl rounded-lg">
           {children}
         </main>
       </div>
@@ -99,9 +101,9 @@ const activities = [
 
 const Dashboard = () => {
   return (
-    <div className="p-8 bg-gray-50 min-h-screen">
-      <div className="max-w-6xl mx-auto bg-white rounded-lg p-8">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Dashboard</h2>
+    <div className="p-8 bg-gradient-to-r from-black to-gray-900 min-h-screen">
+      <div className="max-w-6xl mx-auto bg-gradient-to-t from-black to-gray-900  rounded-lg p-8 shadow-xl">
+        <h2 className="text-3xl font-semibold text-[#D2691E] mb-6">Dashboard</h2>
         <p className="text-lg text-gray-600 mb-10">
           Welcome to your admin dashboard! Here is a quick overview of your current stats.
         </p>
@@ -121,15 +123,15 @@ const Dashboard = () => {
 
         {/* Recent Activities */}
         <div className="mt-10">
-          <h3 className="text-2xl font-semibold text-gray-800">Recent Activities</h3>
+          <h3 className="text-2xl font-semibold text-[#D2691E]">Recent Activities</h3>
           <ul className="mt-6 space-y-6">
             {activities.map(({ icon, text, time }, idx) => (
               <li
                 key={idx}
-                className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                className="bg-gradient-to-r from-black to-gray-900  p-5 rounded-lg shadow-md hover:shadow-lg transition duration-300"
               >
                 <div className="flex items-center space-x-4">
-                  <div className="bg-indigo-500 text-white p-2 rounded-full">
+                  <div className="bg-[#D2691E] text-white p-2 rounded-full">
                     <i className={icon}></i>
                   </div>
                   <div>
@@ -169,31 +171,31 @@ const reports = [
 
 const Reports = () => {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-lg p-8">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Reports</h2>
-        <p className="text-gray-600 mb-10 text-lg">View detailed reports here.</p>
+    <div className="p-6 bg-gradient-to-r from-black to-gray-900 min-h-screen">
+      <div className="max-w-4xl mx-auto bg-gradient-to-tr from-black to-gray-900 shadow-xl rounded-lg p-8">
+        <h2 className="text-3xl font-semibold text-[#D2691E] ">Reports</h2>
+        <p className="text-gray-400 mb-10 text-lg">View detailed reports here.</p>
 
         {/* Summary and Button */}
         <div className="mb-8 flex justify-between items-center">
           <div>
-            <h3 className="text-2xl font-semibold text-gray-800">Report Summary</h3>
-            <p className="text-gray-600 text-sm">Here is an overview of the latest report data.</p>
+            <h3 className="text-2xl font-semibold text-[#D2691E]">Report Summary</h3>
+            <p className="text-gray-400 text-sm">Here is an overview of the latest report data.</p>
           </div>
-          <button className="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-600 transform transition-all duration-300">
+          <button className="bg-[#D2691E] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#8B4513] transform transition-all duration-300">
             Download Report
           </button>
         </div>
 
         {/* Table */}
-        <div className="overflow-x-auto bg-white shadow-lg rounded-lg">
+        <div className="overflow-x-auto bg-black border-x-2 border-[#D2691E] shadow-lg rounded-lg">
           <table className="min-w-full table-auto">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-gradient-to-r from-black to-gray-900">
                 {['Report ID', 'Title', 'Date', 'Status', 'Actions'].map((header, index) => (
                   <th
                     key={index}
-                    className="py-3 px-6 text-left text-sm font-semibold text-gray-700"
+                    className="py-3 px-6 text-left text-sm font-semibold text-[#D2691E]"
                   >
                     {header}
                   </th>
@@ -202,17 +204,17 @@ const Reports = () => {
             </thead>
             <tbody>
               {reports.map(({ id, title, date, status }) => (
-                <tr key={id} className="border-t border-gray-100 hover:bg-gray-50">
-                  <td className="py-4 px-6 text-sm text-gray-800">{id}</td>
-                  <td className="py-4 px-6 text-sm text-gray-600">{title}</td>
-                  <td className="py-4 px-6 text-sm text-gray-600">{date}</td>
-                  <td className="py-4 px-6 text-sm text-gray-600">{status}</td>
+                <tr key={id} className="border-t border-gray-700 hover:bg-[#2f2f2f]">
+                  <td className="py-4 px-6 text-sm text-gray-300">{id}</td>
+                  <td className="py-4 px-6 text-sm text-gray-300">{title}</td>
+                  <td className="py-4 px-6 text-sm text-gray-300">{date}</td>
+                  <td className="py-4 px-6 text-sm text-gray-300">{status}</td>
                   <td className="py-4 px-6 text-sm">
                     <button className="text-blue-500 hover:text-blue-700 transition-all duration-300">
                       View
                     </button>
                     <span className="mx-2">|</span>
-                    <button className="text-green-500 hover:text-green-700 transition-all duration-300">
+                    <button className="text-[#D2691E] hover:text-[#8B4513] transition-all duration-300">
                       Download
                     </button>
                   </td>
@@ -220,10 +222,12 @@ const Reports = () => {
               ))}
             </tbody>
           </table>
+
         </div>
       </div>
     </div>
   );
+
 };
 
 export default Reports;
@@ -253,21 +257,21 @@ const notificationFields = [
 
 const Settings = () => {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-lg p-8">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Settings</h2>
-        <p className="text-gray-600 mb-10 text-lg">Adjust your preferences here.</p>
+    <div className="p-6 bg-gradient-to-r from-black to-gray-900 min-h-screen">
+      <div className="max-w-4xl mx-auto bg-gradient-to-l from-black to-gray-900 shadow-xl rounded-lg p-8">
+        <h2 className="text-3xl font-semibold text-[#D2691E] mb-6">Settings</h2>
+        <p className="text-gray-300 mb-10 text-lg">Adjust your preferences here.</p>
 
         {/* Account Settings Section */}
         <div className="mb-10">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-6">Account Settings</h3>
+          <h3 className="text-2xl font-semibold text-[#D2691E] mb-6">Account Settings</h3>
           <div className="space-y-6">
             {accountFields.map(({ label, type, placeholder }) => (
               <div key={label}>
-                <label className="block text-sm font-medium text-gray-700 mb-2">{label}</label>
+                <label className="block text-sm font-medium text-gray-400 mb-2">{label}</label>
                 <input
                   type={type}
-                  className="block w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="block w-full px-4 py-3 border border-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#D2691E]"
                   placeholder={placeholder}
                 />
               </div>
@@ -277,16 +281,16 @@ const Settings = () => {
 
         {/* Notification Preferences Section */}
         <div className="mb-10">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-6">Notification Preferences</h3>
+          <h3 className="text-2xl font-semibold text-[#D2691E] mb-6">Notification Preferences</h3>
           <div className="space-y-6">
             {notificationFields.map(({ id, label }) => (
               <div key={id} className="flex items-center">
                 <input
                   type="checkbox"
                   id={id}
-                  className="mr-3 text-blue-500 focus:ring-blue-500"
+                  className="mr-3 text-[#D2691E] focus:ring-[#D2691E]"
                 />
-                <label htmlFor={id} className="text-sm text-gray-600">{label}</label>
+                <label htmlFor={id} className="text-sm text-gray-400">{label}</label>
               </div>
             ))}
           </div>
@@ -294,13 +298,14 @@ const Settings = () => {
 
         {/* Save Changes Button */}
         <div className="flex justify-end">
-          <button className="bg-blue-500 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-blue-600 transition-all duration-300">
+          <button className="bg-[#D2691E] text-white px-8 py-3 rounded-lg shadow-lg hover:bg-[#8B4513] transition-all duration-300">
             Save Changes
           </button>
         </div>
       </div>
     </div>
   );
+
 };
 
 export default Settings;
