@@ -1,5 +1,11 @@
 <h1  align="center" > 🏕️ 𝐒𝗂ꭑρᥣ𝖾 𝐃α𝗌ɦᑲⱺα𝗋ᑯ 🏚️</h1>
 
+</br>
+
+[Layout Simple Dashboard](https://github.com/user-attachments/assets/2f6b6db0-59de-47c7-9cda-f441dcce56bd)
+
+</br>
+
 <h3 align="center" > 🐇 Home Page  🦚</h3>
 
 ```dash
