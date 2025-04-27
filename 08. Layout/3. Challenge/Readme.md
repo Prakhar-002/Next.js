@@ -31,6 +31,12 @@
 
 <h1  align="center" > 🏕️ 𝐂ɦαᥣᥣ𝖾𐓣𝗀𝖾 🏚️</h1>
 
+</br>
+
+[Layout Challenge](https://github.com/user-attachments/assets/88fcf880-1045-4ec9-9d17-e5fead3f17df)
+
+</br>
+
 <h3 align="center" > 🐇 Home Page  🦚</h3>
 
 ```dash
