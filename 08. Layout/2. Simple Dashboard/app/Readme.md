@@ -332,12 +332,12 @@ http://localhost:3000/users
 // Reusable User Row Component
 const UserRow = ({ user }: { user: { name: string; email: string; role: string } }) => {
   return (
-    <tr className="border-t border-gray-100 hover:bg-gray-50">
-      <td className="py-4 px-6 text-sm text-gray-800">{user.name}</td>
-      <td className="py-4 px-6 text-sm text-gray-600">{user.email}</td>
-      <td className="py-4 px-6 text-sm text-gray-600">{user.role}</td>
+    <tr className="border-t border-gray-700 hover:bg-[#2f2f2f]">
+      <td className="py-4 px-6 text-sm text-[#D2691E]">{user.name}</td>
+      <td className="py-4 px-6 text-sm text-gray-400">{user.email}</td>
+      <td className="py-4 px-6 text-sm text-gray-400">{user.role}</td>
       <td className="py-4 px-6 text-sm">
-        <button className="text-blue-600 hover:text-blue-800 font-medium transition duration-300">
+        <button className="text-[#D2691E] hover:text-[#8B4513] font-medium transition duration-300">
           Edit
         </button>
         <span className="mx-2">|</span>
@@ -346,6 +346,7 @@ const UserRow = ({ user }: { user: { name: string; email: string; role: string }
         </button>
       </td>
     </tr>
+
   );
 };
 
@@ -358,30 +359,34 @@ const Users = () => {
   ];
 
   return (
-    <div className="p-8 bg-gray-50 min-h-screen">
-      <div className="max-w-6xl mx-auto bg-white rounded-lg p-8">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Users</h2>
-        <p className="text-lg text-gray-600 mb-8">Manage your users here.</p>
+    <div className="p-8 bg-gradient-to-r from-black to-gray-900 min-h-[80%]">
+      <div className="max-w-6xl mx-auto bg-gradient-to-l from-black to-gray-900 rounded-lg p-8">
+        <div className="flex mb-8 justify-between items-center">
+          <div className="">
+            <h2 className="text-3xl font-semibold text-[#D2691E]">Users</h2>
+            <p className="text-lg text-gray-300">Manage your users here.</p>
+          </div>
 
-        <div className="mb-8 flex justify-end">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-            Add New User
-          </button>
+          <div className="flex justify-end">
+            <button className="bg-[#D2691E] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#8B4513] transition duration-300">
+              Add New User
+            </button>
+          </div>
         </div>
 
-        <div className="overflow-x-auto bg-white shadow-md rounded-lg">
+        <div className="overflow-x-auto bg-black border-x-2 border-[#D2691E] shadow-md rounded-lg">
           <table className="min-w-full table-auto">
-            <thead className="bg-gray-200">
-              <tr>
+            <thead className="bg-gray-800">
+              <tr className="bg-gradient-to-r from-black to-gray-900">
                 {/* Map over the headers array and render each <th> */}
                 {['Name', 'Email', 'Role', 'Actions'].map((header, index) => (
                   <th
                     key={index}
-                    className="py-3 px-6 text-left text-sm font-semibold text-gray-700"
+                    className="py-3 px-6 text-left text-sm font-semibold text-[#D2691E]"
                   >
                     {header}
                   </th>
-                  ))}
+                ))}
               </tr>
             </thead>
             <tbody>

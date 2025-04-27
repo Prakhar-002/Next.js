@@ -81,14 +81,17 @@ const categories = [
 
 const BaseLayout = ({ children }: { children: React.ReactNode }) => (
   <html>
-    <body>
+    <body className="bg-black text-white">
       <div className="min-h-screen flex flex-col">
-        <header className="bg-purple-800 text-white p-4">
+        {/* <!-- Header with gradient effect --> */}
+        <header className="bg-gradient-to-r from-black to-purple-900 text-white p-4 shadow-lg">
           <nav>
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-8 justify-center">
               {navLinks.map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className="hover:text-purple-400">{label}</Link>
+                  <Link href={href} className="hover:text-purple-300 transition duration-300 ease-in-out transform hover:scale-110">
+                    {label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -96,11 +99,12 @@ const BaseLayout = ({ children }: { children: React.ReactNode }) => (
         </header>
 
         <div className="flex flex-1">
-          <aside className="w-64 bg-purple-200 p-4">
-            <ul>
+          {/* <!-- Sidebar with sleek design --> */}
+          <aside className="w-64 bg-gradient-to-b from-black to-purple-900 p-4 shadow-md">
+            <ul className="space-y-4">
               {categories.map(({ href, label }) => (
                 <li key={href}>
-                  <Link href={href} className="block py-2 hover:bg-purple-300">
+                  <Link href={href} className="block py-3 px-4 rounded-md border-l-2 border-purple-600 hover:bg-purple-600 transition duration-300 ease-in-out transform hover:scale-105">
                     {label}
                   </Link>
                 </li>
@@ -108,11 +112,15 @@ const BaseLayout = ({ children }: { children: React.ReactNode }) => (
             </ul>
           </aside>
 
-          <main className="flex-1 p-6 bg-white">{children}</main>
+          {/* <!-- Main Content Section --> */}
+          <main className="flex-1 p-8 bg-gradient-to-tl from-black to-gray-900 rounded-tl-3xl rounded-bl-3xl shadow-lg">
+            {children}
+          </main>
         </div>
 
-        <footer className="bg-purple-800 text-white text-center p-4 mt-4">
-          <p>&copy; 2025 My Website</p>
+        {/* <!-- Footer with accent --> */}
+        <footer className="bg-gradient-to-r from-black to-purple-900 text-white text-center p-4 mt-4">
+          <p>&copy; 2025 Prakhar-002</p>
         </footer>
       </div>
     </body>
@@ -210,26 +218,37 @@ const navLinks = [
 ];
 
 const AdminLayout = ({ children }: { children: React.ReactNode }) => (
-  <div className="min-h-screen flex flex-col">
-    <header className="bg-blue-800 text-white p-4">
-      <h1 className="text-2xl">Admin Panel</h1>
+  <div className="min-h-screen flex flex-col bg-black text-white">
+    {/* Header */}
+    <header className="bg-gradient-to-r from-black to-purple-900 p-6 shadow-lg">
+      <h1 className="text-3xl font-bold mb-4 text-center">Admin Panel</h1>
       <nav>
-        <ul className="flex space-x-4">
+        <ul className="flex justify-around space-x-8">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
-              <Link href={href} className="hover:text-gray-300">{label}</Link>
+              <Link
+                href={href}
+                className="hover:text-purple-600 transition duration-300 ease-in-out transform hover:scale-110"
+              >
+                {label}
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
     </header>
 
+    {/* Main Content */}
     <div className="flex flex-1">
-      <aside className="w-64 bg-gray-100 p-4">
-        <ul>
+      {/* Sidebar */}
+      <aside className="w-64 bg-gradient-to-tl from-purple-900 to-black p-6 shadow-md">
+        <ul className="space-y-4">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
-              <Link href={href} className="block py-2 hover:bg-gray-300">
+              <Link
+                href={href}
+                className="block py-3 px-4 rounded-lg  bg-gradient-to-l from-purple-900 to-black border-l-2 border-purple-600 transition duration-300 ease-in-out transform hover:scale-105"
+              >
                 {label === "Users" ? "Manage Users" : label}
               </Link>
             </li>
@@ -237,13 +256,18 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => (
         </ul>
       </aside>
 
-      <main className="flex-1 p-6 bg-white">{children}</main>
+      {/* Main */}
+      <main className="flex-1 p-8 bg-gradient-to-tl from-black to-gray-900 rounded-bl-3xl shadow-lg">
+        {children}
+      </main>
     </div>
 
-    <footer className="bg-blue-800 text-white text-center p-4 mt-4">
-      <p>&copy; 2025 Admin Panel</p>
+    {/* Footer */}
+    <footer className="bg-gradient-to-r from-black to-purple-900 text-white text-center p-4">
+      <p className="text-sm">&copy; 2025 Admin Panel</p>
     </footer>
   </div>
+
 );
 
 export default AdminLayout;
@@ -252,10 +276,42 @@ export default AdminLayout;
 
 </br>
 
-<h3 align="center" > 🐇 Admin / Dashboard Page  🦚</h3>
+<h3 align="center" > 🐇 Admin / [...slug] Page  🦚</h3>
 
 ```dash
-http://localhost:3000/admin/dashboard
+http://localhost:3000/admin/[...slug]
+```
+
+```TSX
+//============ 🗂️app/🗂️admin/🗂️[...slug]/⚛️page.tsx ============== 
+
+
+const AdminRoute = async ({ params }: { params: { all: string[] } }) => {
+  const { slug } = await params;
+
+  return (
+    <div className="bg-gradient-to-r from-black-800 to-gray-900 p-8 rounded-xl shadow-lg text-white">
+      <h1 className="text-3xl font-bold mb-6">Admin Route</h1>
+
+      <ul className="space-y-4 text-lg">
+        {slug.map((p) => (
+          <li
+            key={p}
+            className="bg-gray-700 hover:bg-gray-600 p-4 rounded-lg transition duration-300 ease-in-out"
+          >
+            {p}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+  );
+};
+
+export default AdminRoute;
+```
+
+</br>
 ```
 
 ```TSX
