@@ -1,6 +1,6 @@
 <h1  align="center" > 🏎️ 𝐍𝐞𝐱𝐭.𝐣𝐬  💨</h1> 
 
-<h3  align="center" > 
+<h3  align="center" >
 
 <picture>
    <source srcset="https://github.com/user-attachments/assets/aff002ce-c230-4819-93ea-476969273fbd" media="(prefers-color-scheme: dark)">
