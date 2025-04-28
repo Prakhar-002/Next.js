@@ -34,16 +34,17 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
+[![image](https://github.com/user-attachments/assets/f1921ba4-c13c-4062-9aea-3f0a6296c9f6)](https://www.heroui.com/)
+
+</br>
+
+[![image](https://github.com/user-attachments/assets/c1ddd825-d372-491e-81ea-eba7a0796173)](https://ui.aceternity.com/)
+
+</br>
+
 [![image](https://github.com/user-attachments/assets/a352b246-8db9-45d0-a4b6-1be3c479e401)](https://magicui.design/)
 
 </br>
 
 [![image](https://github.com/user-attachments/assets/d0199845-6be6-471b-b0d2-78cbf70b8609)](https://motion-primitives.com/)
 
-</br>
-
-[![image](https://github.com/user-attachments/assets/f1921ba4-c13c-4062-9aea-3f0a6296c9f6)](https://www.heroui.com/)
-
-</br>
-
-[![image](https://github.com/user-attachments/assets/c1ddd825-d372-491e-81ea-eba7a0796173)](https://ui.aceternity.com/)
