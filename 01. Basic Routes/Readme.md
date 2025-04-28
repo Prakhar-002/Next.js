@@ -18,6 +18,8 @@ Next.js is a popular open-source `React framework` that makes it easier to build
 
 </h3>
 
+</br>
+
 <h1  align="center" > 
 
 ⚠️ Problem ⚠️ with `REACT.JS`
