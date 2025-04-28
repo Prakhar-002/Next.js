@@ -16,9 +16,7 @@
 
 Next.js is a popular open-source `React framework` that makes it easier to build `fast` and `scalable` web applications. It provides a lot of built-in features like `SSR`, `SSG`, `API` routes, and `automatic code splitting`, all of which help with `performance` and `SEO`.
 
-</hr>
-
-</br>
+</h3>
 
 <h1  align="center" > 
 
