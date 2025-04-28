@@ -6,13 +6,13 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </h3>
 
----
+</br>
 
 ## 🎨 CSS Styling
 
 - **CSS Module**
 
----
+</br>
 
 ## 🛠️ UI Libraries & Components -> *Go to webpage by photo*
 
