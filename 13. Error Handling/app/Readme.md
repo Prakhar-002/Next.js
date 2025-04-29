@@ -1,4 +1,4 @@
-<h1  align="center" > 🏕️ 𝐄𝗋𝗋ⱺ𝗋 𝐇α𐓣ᑯᥣ𝗂𐓣𝗀 🏚️</h1>
+<h1  align="center" > 🏕️ 𝐄𝗋𝗋ⱺ𝗋 𝐇α𐓣ᑯᥣ𝗂𐓣𝗀 🏚️</h1> 
 
 # ❌ `error.tsx` in Next.js
 

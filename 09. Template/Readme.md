@@ -1,4 +1,4 @@
-<h1  align="center" > 🏕️ 𝐓𝖾ꭑρᥣα𝗍𝖾  🏚️ </h1>
+<h1  align="center" > 🏕️ 𝐓𝖾ꭑρᥣα𝗍𝖾  🏚️ </h1> 
 
 </br>
 

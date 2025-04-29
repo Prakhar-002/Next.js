@@ -1,4 +1,4 @@
-<h1  align="center" > 🏕️ 𝐑𝖾ᑯ𝗂𝗋𝖾𝖼𝗍  🏚️ </h1>
+<h1  align="center" > 🏕️ 𝐑𝖾ᑯ𝗂𝗋𝖾𝖼𝗍  🏚️ </h1> 
 
 A **redirect** in Next.js means **automatically sending the user** from one URL to another URL.  
 
