@@ -20,7 +20,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐔𝗂𝗏𝖾𝗋𝗌𝖾 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐔𝗂𝗏𝖾𝗋𝗌𝖾 🏚️</h1>
 
 </br>
 
@@ -28,7 +28,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐓α𝗂ᥣω𝗂𐓣ᑯ𝖼𝗌𝗌 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐓α𝗂ᥣω𝗂𐓣ᑯ𝖼𝗌𝗌 🏚️</h1>
 
 </br>
 
@@ -36,7 +36,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐋υ𝗄α𝖼ɦⱺ 𝐔𝗂 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐋υ𝗄α𝖼ɦⱺ 𝐔𝗂 🏚️</h1>
 
 </br>
 
@@ -44,7 +44,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐒ɦαᑯ𝖼𐓣 𝐔𝗂 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐒ɦαᑯ𝖼𐓣 𝐔𝗂 🏚️</h1>
 
 </br>
 
@@ -52,7 +52,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐇ⱺ𝗋𝖾 𝐔𝗂 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐇ⱺ𝗋𝖾 𝐔𝗂 🏚️</h1>
 
 </br>
 
@@ -60,7 +60,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐀𝖼𝖾𝗍𝖾𝗋𐓣𝗂𝗍𝗒 𝐔𝗂 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐀𝖼𝖾𝗍𝖾𝗋𐓣𝗂𝗍𝗒 𝐔𝗂 🏚️</h1>
 
 </br>
 
@@ -68,7 +68,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐌α𝗀𝗂𝖼 𝐔𝗂 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐌α𝗀𝗂𝖼 𝐔𝗂 🏚️</h1>
 
 </br>
 
@@ -76,7 +76,7 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </br>
 
-<h3  align="center" > 🏕️ 𝐌ⱺ𝗍𝗂ⱺ𐓣 𝐏𝗋𝗂ꭑ𝗂𝗍𝗂𝗏𝖾𝗌 🏚️</h3>
+<h1  align="center" > 🏕️ 𝐌ⱺ𝗍𝗂ⱺ𐓣 𝐏𝗋𝗂ꭑ𝗂𝗍𝗂𝗏𝖾𝗌 🏚️</h1>
 
 </br>
 
