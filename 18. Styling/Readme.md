@@ -6,10 +6,6 @@ A collection of modern libraries and UI kits to style your projects beautifully!
 
 </h3>
 
-</br>
-
-<h3  align="center" > 🏕️  🏚️</h3>
-
 ## 🎨 CSS Styling
 
 - **CSS Module**
