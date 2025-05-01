@@ -90,26 +90,6 @@ export default MusicLayout
 
 </br>
 
-<h3 align="center" > 🐇 Musics Layout Page  🦚</h3>
-
-```dash
-http://localhost:3000/musics
-```
-
-```TSX
-//============ 🗂️App/🗂️musics/⚛️layout.tsx ============== 
-
-import React from 'react'
-
-const DefaultMusics = () => {
-  return null;
-}
-
-export default DefaultMusics
-```
-
-</br>
-
 ---
 
 </br>
