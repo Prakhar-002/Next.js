@@ -2,7 +2,7 @@
 
 </br>
 
-![Music app](https://github.com/user-attachments/assets/b1d0edf7-df40-44a2-aa3e-7ace9cc11adf)
+![Game app](https://github.com/user-attachments/assets/edbbcd82-5a08-4882-9b14-23055316fcbc)
 
 </br>
 
@@ -47,13 +47,13 @@ type GameProps = {
 
 const GameCard = ({ game }: GameProps) => {
   return (
-    <div className="bg-gray-800  text-white p-4 rounded-lg shadow-md">
+    <div className="bg-[#171717] text-white p-4 rounded-lg shadow-md">
       <img
         src={game.img}
         alt={game.name}
         className="w-full h-32 object-cover rounded-md"
       />
-      <h3 className="mt-2 text-lg font-semibold">{game.name}</h3>
+      <h3 className="mt-4 text-lg font-semibold">{game.name}</h3>
     </div>
   );
 };
@@ -78,38 +78,31 @@ import { FaGamepad, FaUser, FaTrophy, FaCog } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="w-64 bg-gray-900 text-white h-screen p-5">
+    <div className="w-64 bg-black/70 text-white h-screen p-5">
       <h2 className="text-xl font-bold mb-5">Gaming Dashboard</h2>
       <div className="flex flex-col justify-between h-screen">
-        <ul>
-          <li
-            className="flex items-center p-2 hover:bg-gray-700
-           rounded cursor-pointer"
-          >
-            <FaGamepad className="mr-2" /> Games
-          </li>
-          <li
-            className="flex items-center p-2 hover:bg-gray-700
-           rounded cursor-pointer"
-          >
-            <FaUser className="mr-2" /> Profile
-          </li>
-          <li
-            className="flex items-center p-2 hover:bg-gray-700
-           rounded cursor-pointer"
-          >
-            <FaTrophy className="mr-2" /> Achievements
-          </li>
-          <li
-            className="flex items-center p-2 hover:bg-gray-700
-           rounded cursor-pointer"
-          >
-            <FaCog className="mr-2" /> Settings
-          </li>
+        <ul className="space-y-2">
+          {[
+            { icon: <FaGamepad className="mr-2 text-blue-500" />, label: "Games" },
+            { icon: <FaUser className="mr-2 text-rose-500" />, label: "Profile" },
+            { icon: <FaTrophy className="mr-2 text-amber-500" />, label: "Achievements" },
+            { icon: <FaCog className="mr-2 text-gray-500" />, label: "Settings" },
+          ].map(({ icon, label }) => (
+            <li
+              key={label}
+              className="flex items-center p-4 border-l-4 rounded-md border-[#353535] hover:bg-[#171717] rounded cursor-pointer"
+            >
+              {icon} {label}
+            </li>
+          ))}
         </ul>
 
-        <section className="mb-[7rem]">
-          <Link className="text-2xl font-bold" href="/login">
+
+        <section className="mb-28 ml-4">
+          <Link
+            href="/login"
+            className="inline-block text-2xl font-bold text-white hover:text-[#d7d7d7] bg-chocolate px-6 py-3 rounded-lg shadow-md hover:bg-chocolate-dark transition duration-300"
+          >
             Login
           </Link>
         </section>
@@ -139,17 +132,27 @@ import Sidebar from "@/components/Sidebar";
 
 const Games = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-[#0f0f10] text-white overflow-hidden">
+
+      {/* Sidebar */}
       <Sidebar />
-      <div className="flex-1 bg-gray-100 p-5">
-        <h1 className="text-2xl font-bold mb-4">Featured Games</h1>
-        <div className="flex gap-4">
+
+      {/* Main Content Area */}
+      <div className="flex-1 overflow-y-auto bg-gradient-to-br from-[#1c1c1e] to-[#2d2d2d] p-6 shadow-inner">
+
+        {/* Page Title */}
+        <h1 className="text-3xl font-extrabold mb-6 text-chocolate">🎮 Featured Games</h1>
+
+        {/* Game Card Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
           {games.map((game) => (
             <GameCard key={game.id} game={game} />
           ))}
         </div>
+
       </div>
     </div>
+
   );
 };
 
@@ -170,44 +173,47 @@ http://localhost:3000/login
 
 function LoginPage() {
   return (
-    <div
-      className="flex items-center justify-center min-h-screen
-     bg-gray-100"
-    >
-      <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4">Login</h2>
-        <form className="space-y-4">
+    <div className="flex items-center justify-center min-h-screen bg-black px-4">
+      <div className="w-full max-w-md p-8 bg-[#171717] rounded-2xl shadow-xl">
+        <h2 className="text-3xl font-bold text-gray-100 mb-6 text-center">Welcome Back</h2>
+        <form className="space-y-5">
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-200">
               Email
             </label>
             <input
+              id="email"
               type="email"
-              className="w-full px-3 py-2 mt-1 border rounded-lg
-               focus:outline-none focus:ring focus:border-blue-300"
-              placeholder="Enter your email"
+              required
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+              placeholder="you@example.com"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label htmlFor="password" className="block text-sm font-medium text-gray-200">
               Password
             </label>
             <input
+              id="password"
               type="password"
-              className="w-full px-3 py-2 mt-1 border rounded-lg 
-              focus:outline-none focus:ring focus:border-blue-300"
-              placeholder="Enter your password"
+              required
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+              placeholder="••••••••"
             />
           </div>
           <button
             type="submit"
-            className="w-full px-4 py-2 text-white bg-gray-900 
-            rounded-lg hover:bg-blue-600 focus:outline-none 
-            focus:ring focus:ring-blue-300"
+            className="w-full py-2 px-4 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
           >
             Login
           </button>
         </form>
+        <p className="mt-6 text-sm text-center text-gray-600">
+          Don't have an account?{' '}
+          <a href="/register" className="text-rose-600 hover:underline">
+            Register
+          </a>
+        </p>
       </div>
     </div>
   );
@@ -239,63 +245,57 @@ function LoginPage() {
   return (
     <>
       {isOpen && (
-        <div
-          className="fixed inset-0 flex items-center
-         justify-center bg-black/95"
-        >
-          <div
-            className="w-full max-w-md p-6 bg-white
-           rounded-lg shadow-md relative"
-          >
+        <div className="fixed inset-0 flex items-center justify-center bg-rose-500 z-50">
+          <div className="w-full max-w-md p-6 bg-[#171717] rounded-xl shadow-lg relative">
             <button
               onClick={() => router.push("/games")}
-              className="absolute top-3 right-3 text-gray-500
-               hover:text-gray-700 font-bold"
+              className="absolute top-3 right-3 text-gray-400 hover:text-gray-200 transition"
+              aria-label="Close"
             >
-              &#10005;
+              &times;
             </button>
-            <h2 className="text-2xl font-semibold mb-4 text-center">Login</h2>
-            <form className="space-y-4">
+            <h2 className="text-2xl font-bold text-white mb-6 text-center">Login</h2>
+            <form className="space-y-5">
               <div>
-                <label
-                  className="block text-sm font-medium
-                 text-gray-700"
-                >
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300">
                   Email
                 </label>
                 <input
+                  id="email"
                   type="email"
-                  className="w-full px-3 py-2 mt-1 border
-                   rounded-lg focus:outline-none focus:ring
-                    focus:border-blue-300"
-                  placeholder="Enter your email"
+                  required
+                  className="w-full mt-1 px-4 py-2 bg-[#1f1f1f] border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                  placeholder="you@example.com"
                 />
               </div>
               <div>
-                <label
-                  className="block text-sm font-medium
-                 text-gray-700"
-                >
+                <label htmlFor="password" className="block text-sm font-medium text-gray-300">
                   Password
                 </label>
                 <input
+                  id="password"
                   type="password"
-                  className="w-full px-3 py-2 mt-1 border
-                   rounded-lg focus:outline-none focus:ring focus:border-blue-300"
-                  placeholder="Enter your password"
+                  required
+                  className="w-full mt-1 px-4 py-2 bg-[#1f1f1f] border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
+                  placeholder="••••••••"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full px-4 py-2 text-white bg-gray-900
-                 rounded-lg hover:bg-blue-600 focus:outline-none
-                  focus:ring focus:ring-blue-300"
+                className="w-full py-2 px-4 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
               >
                 Login
               </button>
             </form>
+            <p className="mt-6 text-sm text-center text-gray-400">
+              Don't have an account?{' '}
+              <a href="/register" className="text-rose-500 hover:underline">
+                Register
+              </a>
+            </p>
           </div>
         </div>
+
       )}
     </>
   );
@@ -336,6 +336,61 @@ export const games = [
     id: 4,
     name: "Elden Ring",
     img: "https://static.bandainamcoent.eu/high/elden-ring/elden-ring/00-page-setup/elden-ring-new-header-mobile.jpg",
+  },
+  {
+    id: 5,
+    name: "Final Fantasy VII Rebirth",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr3Clzp5aR_UZZ7m73inypa_Lgn9JbSNjIEg&s",
+  },
+  {
+    id: 6,
+    name: "Dragon's Dogma 2",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ-S-Wxm7lYgVSD1w8gONqRrYLnzoGb6rTgA&s",
+  },
+  {
+    id: 7,
+    name: "Metaphor: ReFantazio",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUg3iA85fdDHkmXE9S3WP1rbXi1U5irW429Q&s",
+  },
+  {
+    id: 8,
+    name: "Helldivers 2",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS000EZH6SWlfDYsNnu-5ZZXXywxzTM5rp0kg&s",
+  },
+  {
+    id: 9,
+    name: "Black Myth: Wukong",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaftpVL32ouEwZLRcznmytgVXiHbiM9xo3bYv15-_SdbsOssKt",
+  },
+  {
+    id: 10,
+    name: "Astro Bot",
+    img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwHe6_x4vYPrJGdVJaq3uKIvDbRAwrgb1D2O38-rsNXRKvqcEz",
+  },
+  {
+    id: 11,
+    name: "Call of Duty: Black Ops 6",
+    img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd4a30CVd8rJrTacarT9V8tpejyUZ2CtTDP_jbn_NnpDgi3nvO",
+  },
+  {
+    id: 12,
+    name: "Indiana Jones and the Great Circle",
+    img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbd1Wk8GMi3jhU9744VF7MLP5EwrtEnbDSeXXKfENbvr_DDu7b",
+  },
+  {
+    id: 13,
+    name: "Animal Well",
+    img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2gfOGZaxFYAfuPmtTYl_3s9_IYJ0aAN_tNIBQcbJDUmCviU0P",
+  },
+  {
+    id: 14,
+    name: "UFO 50",
+    img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThVK2o36Y9TVC0AJd5OqkfSLBLTrKW_ZNQhgnYjakpO9wI8fgU",
+  },
+  {
+    id: 15,
+    name: "The Legend of Zelda: Echoes of Wisdom",
+    img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiuTyKiChRAtYZ74lwfbZmY7hafcY2Pk6uULHB5WYsS-mIjFDz",
   },
 ];
 
