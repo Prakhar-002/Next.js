@@ -26,25 +26,25 @@
 ```TSX
 //============ 🗂️prisma/🛢️schema.prisma ============== 
 
-// We need to write this for making a client components
-"use client"; 
+generator client {
+  provider = "prisma-client-js"
+}
 
-import { useState } from "react";
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
 
-const Movies = () => {
-  const [movies, setMovies] = useState([]);
-
-  console.log("This message is coming from client component");
-
-  return (
-    <div>
-      <h1>Checking out the Client Component</h1>
-      <button onClick={() => console.log("just testing")}>Click</button>
-    </div>
-  );
-};
-
-export default Movies;
+model Movie {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  genre       String
+  releaseDate DateTime
+  rating      Float?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
 
 ```
 
