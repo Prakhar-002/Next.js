@@ -13,7 +13,7 @@ http://localhost:3000/movies
 ```
 
 ```TSX
-//============ 🗂️movies/⚛️page.ts ============== 
+//============ 🗂️movies/⚛️page.tsx ============== 
 
 // By Default Every Component is a "Server Component"
 

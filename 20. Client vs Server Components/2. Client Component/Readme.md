@@ -13,7 +13,7 @@ http://localhost:3000/movies
 ```
 
 ```TSX
-//============ 🗂️movies/⚛️page.ts ============== 
+//============ 🗂️movies/⚛️page.tsx ============== 
 
 // We need to write this for making a client components
 "use client"; 
