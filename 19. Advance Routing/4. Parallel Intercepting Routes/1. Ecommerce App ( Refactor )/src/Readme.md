@@ -1,4 +1,8 @@
-<h1  align="center" > 🏕️ 𝐄𝖼ⱺꭑꭑ𝖾𝗋𝖼𝖾 𝐀ρρ 🏚️</h1>
+<h1  align="center" > 🏕️ 𝐄-𝖼ⱺꭑꭑ𝖾𝗋𝖼𝖾 𝐀ρρ 🏚️</h1>
+
+</br>
+
+![E-commerce](https://github.com/user-attachments/assets/f6cdd899-e611-4a5a-8485-ba21b0b93fc8)
 
 </br>
 
@@ -24,7 +28,7 @@ export default Home
 
 </br>
 
-<h3 align="center" > 🐇 Ecommerce Page  🦚</h3>
+<h3 align="center" > 🐇 E-commerce Page  🦚</h3>
 
 ```dash
 http://localhost:3000/ecommerce

@@ -2,7 +2,7 @@
 
 </br>
 
-![Music app](https://github.com/user-attachments/assets/b1d0edf7-df40-44a2-aa3e-7ace9cc11adf)
+![image](https://github.com/user-attachments/assets/a5fa822e-b787-4335-8456-82d80ec434a3)
 
 </br>
 
