@@ -23,7 +23,7 @@
 
 <h3 align="center" > 🐇 Prisma Folder 🦚</h3>
 
-```TSX
+``` prisma
 //============ 🗂️prisma/🛢️schema.prisma ============== 
 
 generator client {
