@@ -2,6 +2,31 @@
 
 </br>
 
+<h3 align="center" > 🐇 Install Dependency 🦚</h3>
+
+```dash
+npx create-next-app@latest
+npm i prisma -D
+npx prisma init --datasource-provider sqlite
+npx prisma migrate dev --name init
+```
+
+</br>
+
+<h3 align="center" > 🐇 Run Both in Different Terminals 🦚</h3>
+
+```dash
+npm run dev
+```
+
+</br>
+
+```dash
+npx prisma studio 
+```
+
+</br>
+
 <h3 align="center" > 🐇 Home Page 🦚</h3>
 
 ```dash
