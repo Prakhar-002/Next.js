@@ -2,6 +2,10 @@
 
 </br>
 
+![Prisma Movie](https://github.com/user-attachments/assets/904886d2-18fd-4590-9de0-a85fe84639dd)
+
+</br>
+
 <h3 align="center" > 🐇 Install Dependency 🦚</h3>
 
 ```dash
