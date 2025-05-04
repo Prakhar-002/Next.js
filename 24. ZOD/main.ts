@@ -110,7 +110,7 @@ try {
   console.error("❌ Error:", error);
 }
 
-// // Test invalid data
+// Test invalid data
 // const invalidUser: User = {
 //   name: "HuXn",
 //   age: "twenty-five",
