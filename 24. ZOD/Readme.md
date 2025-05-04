@@ -8,7 +8,7 @@
 
 <h3  align="center" > 
 
-<img src="https://github.com/user-attachments/assets/0204bcd6-d5a6-4525-aea2-dee13425a940" width="250px" height="250px"/>
+<img src="https://github.com/user-attachments/assets/0204bcd6-d5a6-4525-aea2-dee13425a940" width="250px" height="198px"/>
 
 </br>
 </br>
